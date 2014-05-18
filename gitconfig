@@ -1,0 +1,21 @@
+[user]
+	name = Sabin Sanislav
+	email = sanislav@gmail.com
+[core]
+	autocrlf = false
+	filemode = false
+[push]
+	default = tracking
+[alias]
+	amend = commit --amend -C HEAD
+	undo = reset --soft HEAD^
+	graph = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+	ls = log --first-parent --graph --pretty=format:'%Cred%h%Creset | %cn | -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	cp = cherry-pick
+	st = status
+	cl = clone
+	ci = commit
+	co = checkout
+	br = branch
+	diff = diff --word-diff
+	dc = diff --cached
